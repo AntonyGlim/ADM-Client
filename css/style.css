@@ -1,3 +1,36 @@
-body {
-    background-color: green;
+:root {
+    /* colors */
+    --main_black_color: black;
+    --main_white_color: white;
+    --main_dark_color: #4068A5;
+    --main_dark_lighter_color: #DAE9FF;
+    --main_light_color: #FFC225;
+    --main_light_lighter_color: #FFEDBD;
+    /* sizes */
+    --container_height: 1200px;
+    --content_height: 1155px;
+    --border_radius: 5px;
+    --top_menu_height: 45px;
+}
+
+.container {
+    width: var(--container_height);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top_menu {
+    background-color: var(--main_dark_color);
+    border-radius: var(--border_radius);
+    border: 1px solid var(--main_black_color);
+    width: var(--content_height);
+    height: var(--top_menu_height);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search_form {
+    background-color: var(--main_dark_lighter_color);
+    border-radius: var(--border_radius);
+    border: 1px solid var(--main_black_color);
 }
