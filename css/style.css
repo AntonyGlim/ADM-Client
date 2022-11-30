@@ -29,7 +29,7 @@
     margin-right: auto;
 }
 
-#search_form {
+.search_form {
     background-color: var(--main_dark_lighter_color);
     border-radius: var(--border_radius);
     border: 1px solid var(--main_black_color);
