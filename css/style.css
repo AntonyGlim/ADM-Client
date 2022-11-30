@@ -7,23 +7,36 @@
     --main_light_color: #FFC225;
     --main_light_lighter_color: #FFEDBD;
     /* sizes */
-    --container_height: 1200px;
-    --content_height: 1155px;
-    --border_radius: 5px;
+    --container_width: 1155px;
+    --container_height: 900px;
+    --content_width: 1155px;
+    --board_width: 345px;
+    --panel_height: 20px;
     --top_menu_height: 45px;
+    /* border */
+    --border_radius: 5px;
+    --border_line_width: 1px;
+}
+
+* {
+    font-family: Roboto, Arial, Verdana, Helvetica;
+    border-radius: var(--border_radius);
 }
 
 .container {
-    width: var(--container_height);
-    margin-left: auto;
-    margin-right: auto;
+    background: #FFC225;
+    width: var(--container_width);
+    height: var(--container_height);
+    margin: 0 auto;
 }
+
+
+/* top_menu */
 
 .top_menu {
     background-color: var(--main_dark_color);
-    border-radius: var(--border_radius);
     border: 1px solid var(--main_black_color);
-    width: var(--content_height);
+    width: var(--content_width);
     height: var(--top_menu_height);
     margin-left: auto;
     margin-right: auto;
@@ -31,6 +44,66 @@
 
 .search_form {
     background-color: var(--main_dark_lighter_color);
-    border-radius: var(--border_radius);
     border: 1px solid var(--main_black_color);
+}
+
+
+/* sidebar */
+
+aside {
+    float: left;
+    margin: 15px 0px 15px 0px;
+    background: #16b49f;
+    width: 75px;
+    height: 795px;
+}
+
+
+/* content */
+
+.content {
+    float: right;
+    margin: 15px 0px 15px 0px;
+    background: #31b95a;
+    width: 1065px;
+    height: 795px;
+}
+
+.board,
+.title,
+.create_button {
+    border: var(--border_line_width) solid var(--main_black_color);
+    border-radius: var(--border_radius);
+}
+
+.board {
+    background-color: var(--main_white_color);
+    height: 795px;
+    width: var(--board_width);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title,
+.create_button {
+    background-color: var(--main_dark_lighter_color);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14;
+    height: var(--panel_height);
+    line-height: var(--panel_height);
+}
+
+
+/* .title {} */
+
+
+/* .create_button {} */
+
+
+/* footer */
+
+footer {
+    clear: both;
+    background: rgb(85, 85, 185);
 }
