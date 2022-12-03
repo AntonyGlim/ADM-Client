@@ -63,12 +63,29 @@ aside ul {
 .aside_icon {
     width: var(--grid_column_width);
     height: calc(var(--grid_row_height) * 5);
+}
+
+.aside_icon a {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.aside_icon img {
+.aside_icon:hover,
+.aside_active {
+    background: var(--main_light_lighter_color);
+    border: var(--border_line_width) solid black;
+    box-sizing: border-box;
+}
+
+.aside_link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.aside_icon a img {
     width: calc(var(--grid_column_width) - var(--grid_row_height));
     height: calc(var(--grid_row_height) * 4);
 }
