@@ -44,11 +44,33 @@
 }
 
 header {
-    background-color: rgb(195, 236, 99);
+    background-color: var(--main_dark_color);
 }
 
 aside {
-    background-color: rgb(195, 236, 99);
+    background-color: var(--main_dark_lighter_color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aside_icon {
+    width: var(--grid_column_width);
+    height: calc(var(--grid_row_height) * 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside_icon img {
+    width: calc(var(--grid_column_width) - var(--grid_row_height));
+    height: calc(var(--grid_row_height) * 4);
 }
 
 .board {
@@ -57,6 +79,12 @@ aside {
 
 footer {
     background-color: rgb(195, 236, 99);
+}
+
+.first_margined {
+    margin: 0 var(--main_margin) var(--main_margin);
+    position: relative;
+    top: -1px;
 }
 
 .margined {
