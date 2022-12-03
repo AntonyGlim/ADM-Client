@@ -1,13 +1,36 @@
+:root {
+    /* colors */
+    --main_black_color: black;
+    --main_white_color: white;
+    --main_dark_color: #4068A5;
+    --main_dark_lighter_color: #DAE9FF;
+    --main_light_color: #FFC225;
+    --main_light_lighter_color: #FFEDBD;
+    /* sizes */
+    --container_width: 1200px;
+    --container_height: 900px;
+    --content_height: 810px;
+    /* grid sizes */
+    --grid_column_width: 75px;
+    --grid_column_space_width: 15px;
+    --grid_row_height: 15px;
+    /* border */
+    --border_radius: 5px;
+    --border_line_width: 1px;
+    /**/
+    --main_margin: calc(var(--grid_column_space_width) / 2)
+}
+
 .main_flex_container {
-    background-color: rgb(228, 241, 201);
+    background-color: rgb(245, 211, 188);
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-content: space-between;
-    height: 900px;
-    width: 1200px;
+    width: var(--container_width);
+    height: var(--container_height);
 }
 
 .content_flex_container {
@@ -17,31 +40,31 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 810px;
+    height: var(--content_height);
 }
 
 header {
     background-color: rgb(195, 236, 99);
-    margin: 7.5px;
 }
 
 aside {
     background-color: rgb(195, 236, 99);
-    margin: 7.5px;
 }
 
 .board {
     background-color: rgb(195, 236, 99);
-    margin: 7.5px;
 }
 
 footer {
     background-color: rgb(195, 236, 99);
-    margin: 7.5px;
+}
+
+.margined {
+    margin: var(--main_margin);
 }
 
 .bordered {
-    border: 1px solid black;
+    border: var(--border_line_width) solid black;
     box-sizing: border-box;
 }
 
@@ -50,37 +73,37 @@ footer {
 }
 
 .rounded {
-    border-radius: 5px;
+    border-radius: var(--border_radius);
 }
 
 .height_1 {
-    height: 15px;
+    height: calc(var(--grid_row_height) * 1);
 }
 
 .height_3 {
-    height: 45px;
+    height: calc(var(--grid_row_height) * 3);
 }
 
 .height_17 {
-    height: 255px;
+    height: calc(var(--grid_row_height) * 17);
 }
 
 .height_26 {
-    height: 390px;
+    height: calc(var(--grid_row_height) * 26);
 }
 
 .height_53 {
-    height: 795px;
+    height: calc(var(--grid_row_height) * 53);
 }
 
 .width_1 {
-    width: 75px;
+    width: calc(var(--grid_column_width) * 1);
 }
 
 .width_4 {
-    width: 345px;
+    width: calc(var(--grid_column_width) * 4 + var(--grid_column_space_width) * 3);
 }
 
 .width_13 {
-    width: 1155px;
+    width: calc(var(--grid_column_width) * 13 + var(--grid_column_space_width) * 12);
 }
