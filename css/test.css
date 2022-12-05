@@ -32,6 +32,7 @@
 
 * {
     font-family: Roboto, Arial, Verdana, Helvetica;
+    font-size: 14px;
 }
 
 .main_flex_container {
@@ -85,13 +86,13 @@ aside ul {
 
 .aside_icon:hover {
     background: var(--main_light_color);
-    border: var(--border_line_width) solid black;
+    border: var(--border_line_width) solid var(--main_black_color);
     box-sizing: border-box;
 }
 
 .aside_active {
     background: var(--main_light_lighter_color);
-    border: var(--border_line_width) solid black;
+    border: var(--border_line_width) solid var(--main_black_color);
     box-sizing: border-box;
 }
 
@@ -124,33 +125,59 @@ aside ul {
 }
 
 .board_content {
-    background: rgb(99, 236, 117);
     width: calc(var(--width_4) - 2 * var(--border_line_width));
     width: calc(var(--width_4) - 2 * var(--border_line_width));
-    /*FIXME*/
-    height: calc(var(--height_53) - 2 * (var(--board_title_height) + 1px));
+    height: calc(var(--height_53) - 2 * (var(--board_title_height) + 2px));
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    overflow-y: scroll;
+}
+
+.board_content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.board_content::-webkit-scrollbar-track {
+    background: rgb(233, 233, 233);
+    border-radius: 2.5px;
+}
+
+.board_content::-webkit-scrollbar-thumb {
+    background: var(--main_light_lighter_color);
+    border-radius: 2.5px;
+}
+
+.board_content::-webkit-scrollbar-thumb:hover {
+    background: var(--main_light_color);
+    border-radius: 2.5px;
 }
 
 .board_content ul {
-    background: rgb(236, 99, 213);
     list-style: none;
     margin: 0px;
     padding: 0px;
 }
 
 .board_content ul li {
-    background: rgb(240, 229, 172);
     list-style: none;
     height: var(--grid_row_height);
     margin: var(--main_margin) 2px var(--main_margin) 2px;
-    padding: 0;
+    padding: 2.5px;
 }
 
 .board_content ul li:hover {
     background: var(--main_light_color);
+    border: var(--border_line_width) solid var(--main_black_color);
+}
+
+.board_content_no_active_line {
+    border: var(--border_line_width) solid var(--main_white_color);
+}
+
+.board_content_active_line {
+    background: var(--main_light_lighter_color);
+    border: var(--border_line_width) solid var(--main_black_color);
 }
 
 .board_create_button {
@@ -181,7 +208,7 @@ footer {
 }
 
 .bordered {
-    border: var(--border_line_width) solid black;
+    border: var(--border_line_width) solid var(--main_black_color);
     box-sizing: border-box;
 }
 
