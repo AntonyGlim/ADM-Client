@@ -101,7 +101,7 @@ footer {
 .first_margined {
     margin: 0 var(--main_margin) var(--main_margin);
     position: relative;
-    top: -1px;
+    top: calc(var(--border_line_width) - 2 * var(--border_line_width));
 }
 
 .margined {
