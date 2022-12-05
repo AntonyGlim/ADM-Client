@@ -122,6 +122,10 @@ aside ul {
     top: calc(var(--border_line_width) - 2 * var(--border_line_width));
     left: calc(var(--border_line_width) - 2 * var(--border_line_width));
     right: calc(var(--border_line_width) - 2 * var(--border_line_width));
+    line-height: var(--board_title_height);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
 }
 
 .board_content {
@@ -187,6 +191,10 @@ aside ul {
     bottom: calc(var(--border_line_width) * -1);
     left: calc(var(--border_line_width) * -1);
     right: calc(var(--border_line_width) * -1);
+    line-height: var(--board_title_height);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
 }
 
 .board_create_button:hover {
