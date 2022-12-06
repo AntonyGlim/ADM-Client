@@ -27,7 +27,10 @@
     --height_17: calc(var(--grid_row_height) * 17);
     --height_26: calc(var(--grid_row_height) * 26);
     --height_53: calc(var(--grid_row_height) * 53);
-    --board_title_height: 20px;
+    --height_board_title: 20px;
+    --height_board_content_17: calc(var(--height_17) - 2 * (var(--height_board_title) + 2px));
+    --height_board_content_26: calc(var(--height_26) - 2 * (var(--height_board_title) + 2px));
+    --height_board_content_53: calc(var(--height_53) - 2 * (var(--height_board_title) + 2px));
 }
 
 * {
@@ -117,12 +120,12 @@ aside ul {
 
 .board_title {
     background: var(--main_dark_lighter_color);
-    height: var(--board_title_height);
+    height: var(--height_board_title);
     position: relative;
     top: calc(var(--border_line_width) - 2 * var(--border_line_width));
     left: calc(var(--border_line_width) - 2 * var(--border_line_width));
     right: calc(var(--border_line_width) - 2 * var(--border_line_width));
-    line-height: var(--board_title_height);
+    line-height: var(--height_board_title);
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
@@ -130,8 +133,6 @@ aside ul {
 
 .board_content {
     width: calc(var(--width_4) - 2 * var(--border_line_width));
-    width: calc(var(--width_4) - 2 * var(--border_line_width));
-    height: calc(var(--height_53) - 2 * (var(--board_title_height) + 2px));
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -186,12 +187,12 @@ aside ul {
 
 .board_create_button {
     background: var(--main_light_lighter_color);
-    height: var(--board_title_height);
+    height: var(--height_board_title);
     position: relative;
     bottom: calc(var(--border_line_width) * -1);
     left: calc(var(--border_line_width) * -1);
     right: calc(var(--border_line_width) * -1);
-    line-height: var(--board_title_height);
+    line-height: var(--height_board_title);
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
@@ -252,6 +253,18 @@ footer {
 
 .height_53 {
     height: var(--height_53);
+}
+
+.height_board_content_17 {
+    height: var(--height_board_content_17);
+}
+
+.height_board_content_26 {
+    height: var(--height_board_content_26);
+}
+
+.height_board_content_53 {
+    height: var(--height_board_content_53);
 }
 
 .width_100_per {
