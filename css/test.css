@@ -201,6 +201,12 @@ aside ul {
     background: var(--main_light_color);
 }
 
+.board_create_button a:link,
+.board_create_button a:visited {
+    color: var(--main_black_color);
+    text-decoration: none;
+}
+
 footer {
     background: rgb(195, 236, 99);
 }
