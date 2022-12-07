@@ -17,6 +17,7 @@
     /* border */
     --border_radius: 5px;
     --border_line_width: 1px;
+    --board_line_padding: 2.5px;
     /*calculated sizes*/
     --main_margin: calc(var(--grid_column_space_width) / 2);
     --width_1: calc(var(--grid_column_width) * 1);
@@ -100,6 +101,7 @@ aside ul {
 }
 
 .aside_link {
+    color: var(--main_black_color);
     display: block;
     height: 100%;
     width: 100%;
@@ -145,17 +147,17 @@ aside ul {
 
 .board_content::-webkit-scrollbar-track {
     background: rgb(233, 233, 233);
-    border-radius: 2.5px;
+    border-radius: calc(var(--border_radius) / 2);
 }
 
 .board_content::-webkit-scrollbar-thumb {
     background: var(--main_light_lighter_color);
-    border-radius: 2.5px;
+    border-radius: calc(var(--border_radius) / 2);
 }
 
 .board_content::-webkit-scrollbar-thumb:hover {
     background: var(--main_light_color);
-    border-radius: 2.5px;
+    border-radius: calc(var(--border_radius) / 2);
 }
 
 .board_content ul {
@@ -168,7 +170,7 @@ aside ul {
     list-style: none;
     height: var(--grid_row_height);
     margin: var(--main_margin) 2px var(--main_margin) 2px;
-    padding: 2.5px;
+    padding: var(--board_line_padding);
 }
 
 .board_content ul li:hover {
@@ -202,10 +204,13 @@ aside ul {
     background: var(--main_light_color);
 }
 
-.board_create_button a:link,
-.board_create_button a:visited {
-    color: var(--main_black_color);
-    text-decoration: none;
+.board_content_no_active_line a,
+.board_content_active_line a {
+    position: relative;
+    top: calc(-1 * (var(--board_line_padding) + var(--border_line_width)));
+    left: calc(-1 * (var(--board_line_padding) + var(--border_line_width)));
+    border-radius: var(--border_radius);
+    padding: calc((var(--board_line_padding) + var(--border_line_width)));
 }
 
 footer {
