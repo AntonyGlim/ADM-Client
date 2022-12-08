@@ -213,6 +213,33 @@ aside ul {
     padding: calc((var(--board_line_padding) + var(--border_line_width)));
 }
 
+.board_line_container {
+    background: rgb(250, 7, 7, 0.5);
+    position: relative;
+    top: calc(-1 * (var(--board_line_padding) + var(--border_line_width)));
+    left: calc(-1 * (var(--board_line_padding) + var(--border_line_width)));
+    border-radius: var(--border_radius);
+    display: flex;
+}
+
+.board_line_checkbox {
+    background: rgb(29, 212, 29, 0.5);
+    width: 7%;
+}
+
+.board_line_param_name {
+    background: rgb(230, 230, 69, 0.5);
+    width: 63%;
+    text-align: start;
+}
+
+.board_line_param_value {
+    background: rgb(43, 30, 238, 0.5);
+    width: 30%;
+    text-align: end;
+    color: rgb(105, 105, 105);
+}
+
 footer {
     background: rgb(195, 236, 99);
 }
