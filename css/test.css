@@ -18,6 +18,7 @@
     --border_radius: 5px;
     --border_line_width: 1px;
     --board_line_padding: 2.5px;
+    --checkbox_size: 12px;
     /*calculated sizes*/
     --main_margin: calc(var(--grid_column_space_width) / 2);
     --width_1: calc(var(--grid_column_width) * 1);
@@ -214,8 +215,9 @@ aside ul {
 }
 
 .board_line_container {
-    background: rgb(250, 7, 7, 0.5);
     position: relative;
+    height: var(--grid_row_height);
+    padding: calc((var(--board_line_padding) + var(--border_line_width)));
     top: calc(-1 * (var(--board_line_padding) + var(--border_line_width)));
     left: calc(-1 * (var(--board_line_padding) + var(--border_line_width)));
     border-radius: var(--border_radius);
@@ -223,25 +225,29 @@ aside ul {
 }
 
 .board_line_checkbox {
-    background: rgb(29, 212, 29, 0.5);
-    width: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board_checkbox {
+    margin: 0px;
+    height: var(--checkbox_size);
+    width: var(--checkbox_size);
+    accent-color: var(--main_light_lighter_color);
 }
 
 .board_line_param_name {
-    background: rgb(230, 230, 69, 0.5);
-    width: 63%;
     text-align: start;
 }
 
 .board_line_param_value {
-    background: rgb(43, 30, 238, 0.5);
-    width: 30%;
     text-align: end;
     color: rgb(105, 105, 105);
 }
 
 footer {
-    background: rgb(195, 236, 99);
+    background: rgb(240, 152, 81);
 }
 
 .first_margined {
@@ -301,6 +307,22 @@ footer {
 
 .width_100_per {
     width: 100%;
+}
+
+.width_95_per {
+    width: 95%;
+}
+
+.width_65_per {
+    width: 65%;
+}
+
+.width_30_per {
+    width: 30%;
+}
+
+.width_5_per {
+    width: 5%;
 }
 
 .width_1 {
