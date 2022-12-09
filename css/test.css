@@ -6,6 +6,8 @@
     --main_dark_lighter_color: #DAE9FF;
     --main_light_color: #FFC225;
     --main_light_lighter_color: #FFEDBD;
+    --main_grey_color: #646464;
+    --main_grey_lighter_color: #e9e9e9;
     /* sizes */
     --container_width: 1200px;
     --container_height: 900px;
@@ -147,7 +149,7 @@ aside ul {
 }
 
 .board_content::-webkit-scrollbar-track {
-    background: rgb(233, 233, 233);
+    background: var(--main_grey_lighter_color);
     border-radius: calc(var(--border_radius) / 2);
 }
 
@@ -243,11 +245,12 @@ aside ul {
 
 .board_line_param_value {
     text-align: end;
-    color: rgb(105, 105, 105);
+    color: var(--main_grey_color);
 }
 
 footer {
-    background: rgb(240, 152, 81);
+    text-align: center;
+    color: var(--main_dark_color);
 }
 
 .first_margined {
