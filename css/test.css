@@ -25,6 +25,7 @@
     --main_margin: calc(var(--grid_column_space_width) / 2);
     --width_1: calc(var(--grid_column_width) * 1);
     --width_4: calc(var(--grid_column_width) * 4 + var(--grid_column_space_width) * 3);
+    --width_8: calc(var(--grid_column_width) * 8 + var(--grid_column_space_width) * 7);
     --width_13: calc(var(--grid_column_width) * 13 + var(--grid_column_space_width) * 12);
     --height_1: calc(var(--grid_row_height) * 1);
     --height_3: calc(var(--grid_row_height) * 3);
@@ -65,6 +66,39 @@
 
 header {
     background: var(--main_dark_color);
+    display: flex;
+}
+
+.header_app_name {
+    background: #253bff73;
+    position: relative;
+    top: calc(var(--border_line_width) * -1);
+    left: calc(var(--border_line_width) * -1);
+    margin-right: var(--main_margin);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--main_white_color);
+    text-shadow: 1px 1px 1px var(--main_black_color);
+}
+
+.header_search {
+    background: #75ff2573;
+    position: relative;
+    top: calc(var(--border_line_width) * -1);
+    margin-left: var(--main_margin);
+    margin-right: var(--main_margin);
+}
+
+.header_user_info {
+    background: #ff25b673;
+    position: relative;
+    top: calc(var(--border_line_width) * -1);
+    right: calc(var(--border_line_width) * -1);
+    margin-left: var(--main_margin);
 }
 
 aside {
@@ -334,6 +368,10 @@ footer {
 
 .width_4 {
     width: var(--width_4);
+}
+
+.width_8 {
+    width: var(--width_8);
 }
 
 .width_13 {
