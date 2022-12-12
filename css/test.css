@@ -24,8 +24,10 @@
     /*calculated sizes*/
     --main_margin: calc(var(--grid_column_space_width) / 2);
     --width_1: calc(var(--grid_column_width) * 1);
+    --width_2: calc(var(--grid_column_width) * 2 + var(--grid_column_space_width) * 1);
     --width_4: calc(var(--grid_column_width) * 4 + var(--grid_column_space_width) * 3);
     --width_8: calc(var(--grid_column_width) * 8 + var(--grid_column_space_width) * 7);
+    --width_9: calc(var(--grid_column_width) * 9 + var(--grid_column_space_width) * 8);
     --width_13: calc(var(--grid_column_width) * 13 + var(--grid_column_space_width) * 12);
     --height_1: calc(var(--grid_row_height) * 1);
     --height_3: calc(var(--grid_row_height) * 3);
@@ -70,7 +72,6 @@ header {
 }
 
 .header_app_name {
-    /* background: #253bff73; */
     position: relative;
     top: calc(var(--border_line_width) * -1);
     left: calc(var(--border_line_width) * -1);
@@ -78,15 +79,14 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
     text-transform: uppercase;
     font-weight: bold;
     color: var(--main_white_color);
     text-shadow: 1px 1px 1px var(--main_black_color);
+    padding-left: 25px;
 }
 
 .header_search {
-    /* background: #75ff2573; */
     position: relative;
     top: calc(var(--border_line_width) * -1);
     margin-left: var(--main_margin);
@@ -125,11 +125,20 @@ header {
 }
 
 .header_user_info {
-    background: #ff25b673;
     position: relative;
     top: calc(var(--border_line_width) * -1);
     right: calc(var(--border_line_width) * -1);
     margin-left: var(--main_margin);
+    width: var(--width_2);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: end;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--main_white_color);
+    text-shadow: 1px 1px 1px var(--main_black_color);
+    padding-right: 25px;
 }
 
 aside {
@@ -381,12 +390,20 @@ footer {
     width: 95%;
 }
 
+.width_70_per {
+    width: 70%;
+}
+
 .width_65_per {
     width: 65%;
 }
 
 .width_30_per {
     width: 30%;
+}
+
+.width_15_per {
+    width: 15%;
 }
 
 .width_5_per {
@@ -397,12 +414,20 @@ footer {
     width: var(--width_1);
 }
 
+.width_2 {
+    width: var(--width_2);
+}
+
 .width_4 {
     width: var(--width_4);
 }
 
 .width_8 {
     width: var(--width_8);
+}
+
+.width_9 {
+    width: var(--width_9);
 }
 
 .width_13 {
