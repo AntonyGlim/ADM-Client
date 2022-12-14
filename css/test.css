@@ -38,7 +38,7 @@
     --height_board_content_17: calc(var(--height_17) - 2 * (var(--height_board_title) + 2px));
     --height_board_content_26: calc(var(--height_26) - 2 * (var(--height_board_title) + 2px));
     --height_board_content_53: calc(var(--height_53) - 2 * (var(--height_board_title) + 2px));
-    --height_board_content_no_btn_17: calc(var(--height_17) - 1 * (var(--height_board_title) + 2px));
+    --height_board_content_no_title_or_btn_17: calc(var(--height_17) - 1 * (var(--height_board_title) + 2px));
 }
 
 * {
@@ -383,8 +383,8 @@ footer {
     height: var(--height_board_content_53);
 }
 
-.height_board_content_no_btn_17 {
-    height: var(--height_board_content_no_btn_17);
+.height_board_content_no_title_or_btn_17 {
+    height: var(--height_board_content_no_title_or_btn_17);
 }
 
 .width_100_per {
