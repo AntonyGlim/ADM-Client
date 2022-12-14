@@ -114,15 +114,7 @@ header {
     background-repeat: no-repeat;
     background-size: 15px 15px;
     padding: 2.5px 2.5px 2.5px 25px;
-}
-
-.header_search_input:hover {
-    background: var(--main_light_color);
-    background-image: url('/imgs/header/icon_search.png');
-    background-position: 5px 3.5px;
-    background-repeat: no-repeat;
-    background-size: 15px 15px;
-    padding: 2.5px 2.5px 2.5px 25px;
+    outline: 1px solid var(--main_light_lighter_color);
 }
 
 .header_user_info {
