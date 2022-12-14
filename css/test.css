@@ -259,6 +259,11 @@ aside ul {
     border: var(--border_line_width) solid var(--main_black_color);
 }
 
+.board_button_container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .board_create_button {
     background: var(--main_light_lighter_color);
     height: var(--height_board_title);
@@ -403,6 +408,14 @@ footer {
 
 .width_65_per {
     width: 65%;
+}
+
+.width_50_per {
+    width: 50%;
+}
+
+.width_48_per {
+    width: 48%;
 }
 
 .width_30_per {
