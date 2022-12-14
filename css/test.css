@@ -39,6 +39,8 @@
     --height_board_content_26: calc(var(--height_26) - 2 * (var(--height_board_title) + 2px));
     --height_board_content_53: calc(var(--height_53) - 2 * (var(--height_board_title) + 2px));
     --height_board_content_no_title_or_btn_17: calc(var(--height_17) - 1 * (var(--height_board_title) + 2px));
+    --height_board_content_no_title_or_btn_26: calc(var(--height_26) - 1 * (var(--height_board_title) + 2px));
+    --height_board_content_no_title_or_btn_53: calc(var(--height_53) - 1 * (var(--height_board_title) + 2px));
 }
 
 * {
@@ -379,6 +381,14 @@ footer {
     height: var(--height_board_content_no_title_or_btn_17);
 }
 
+.height_board_content_no_title_or_btn_26 {
+    height: var(--height_board_content_no_title_or_btn_26);
+}
+
+.height_board_content_no_title_or_btn_53 {
+    height: var(--height_board_content_no_title_or_btn_53);
+}
+
 .width_100_per {
     width: 100%;
 }
@@ -429,4 +439,19 @@ footer {
 
 .width_13 {
     width: var(--width_13);
+}
+
+
+/*for debug*/
+
+.random_bg_color_1 {
+    background: rgba(243, 58, 34, 0.25);
+}
+
+.random_bg_color_2 {
+    background: rgba(13, 245, 206, 0.25);
+}
+
+.random_bg_color_3 {
+    background: rgba(158, 29, 233, 0.25);
 }
