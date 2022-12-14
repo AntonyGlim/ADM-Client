@@ -209,6 +209,8 @@ aside ul {
     width: calc(var(--width_4) - 2 * var(--border_line_width));
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
     justify-content: flex-start;
     overflow-y: scroll;
 }
@@ -234,6 +236,7 @@ aside ul {
 
 .board_content ul {
     list-style: none;
+    width: 100%;
     margin: 0px;
     padding: 0px;
 }
@@ -400,6 +403,10 @@ footer {
 
 .width_95_per {
     width: 95%;
+}
+
+.width_80_per {
+    width: 80%;
 }
 
 .width_70_per {
