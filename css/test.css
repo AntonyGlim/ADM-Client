@@ -52,6 +52,11 @@
     font-size: 14px;
 }
 
+
+/* body {
+    filter: blur(3px);
+} */
+
 .main_flex_container {
     margin: auto;
     display: flex;
