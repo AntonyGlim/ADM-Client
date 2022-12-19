@@ -445,52 +445,404 @@ footer {
     height: var(--height_board_content_no_title_or_btn_53);
 }
 
-.width_100_per {
-    width: 100%;
+.width_1_per {
+    width: 1%;
 }
 
-.width_95_per {
-    width: 95%;
+.width_2_per {
+    width: 2%;
 }
 
-.width_90_per {
-    width: 90%;
+.width_3_per {
+    width: 3%;
 }
 
-.width_85_per {
-    width: 85%;
+.width_4_per {
+    width: 4%;
 }
 
-.width_80_per {
-    width: 80%;
+.width_5_per {
+    width: 5%;
 }
 
-.width_70_per {
-    width: 70%;
+.width_6_per {
+    width: 6%;
 }
 
-.width_65_per {
-    width: 65%;
+.width_7_per {
+    width: 7%;
 }
 
-.width_50_per {
-    width: 50%;
+.width_8_per {
+    width: 8%;
 }
 
-.width_48_per {
-    width: 48%;
+.width_9_per {
+    width: 9%;
 }
 
-.width_30_per {
-    width: 30%;
+.width_10_per {
+    width: 10%;
+}
+
+.width_11_per {
+    width: 11%;
+}
+
+.width_12_per {
+    width: 12%;
+}
+
+.width_13_per {
+    width: 13%;
+}
+
+.width_14_per {
+    width: 14%;
 }
 
 .width_15_per {
     width: 15%;
 }
 
-.width_5_per {
-    width: 5%;
+.width_16_per {
+    width: 16%;
+}
+
+.width_17_per {
+    width: 17%;
+}
+
+.width_18_per {
+    width: 18%;
+}
+
+.width_19_per {
+    width: 19%;
+}
+
+.width_20_per {
+    width: 20%;
+}
+
+.width_21_per {
+    width: 21%;
+}
+
+.width_22_per {
+    width: 22%;
+}
+
+.width_23_per {
+    width: 23%;
+}
+
+.width_24_per {
+    width: 24%;
+}
+
+.width_25_per {
+    width: 25%;
+}
+
+.width_26_per {
+    width: 26%;
+}
+
+.width_27_per {
+    width: 27%;
+}
+
+.width_28_per {
+    width: 28%;
+}
+
+.width_29_per {
+    width: 29%;
+}
+
+.width_30_per {
+    width: 30%;
+}
+
+.width_31_per {
+    width: 31%;
+}
+
+.width_32_per {
+    width: 32%;
+}
+
+.width_33_per {
+    width: 33%;
+}
+
+.width_34_per {
+    width: 34%;
+}
+
+.width_35_per {
+    width: 35%;
+}
+
+.width_36_per {
+    width: 36%;
+}
+
+.width_37_per {
+    width: 37%;
+}
+
+.width_38_per {
+    width: 38%;
+}
+
+.width_39_per {
+    width: 39%;
+}
+
+.width_40_per {
+    width: 40%;
+}
+
+.width_41_per {
+    width: 41%;
+}
+
+.width_42_per {
+    width: 42%;
+}
+
+.width_43_per {
+    width: 43%;
+}
+
+.width_44_per {
+    width: 44%;
+}
+
+.width_45_per {
+    width: 45%;
+}
+
+.width_46_per {
+    width: 46%;
+}
+
+.width_47_per {
+    width: 47%;
+}
+
+.width_48_per {
+    width: 48%;
+}
+
+.width_49_per {
+    width: 49%;
+}
+
+.width_50_per {
+    width: 50%;
+}
+
+.width_51_per {
+    width: 51%;
+}
+
+.width_52_per {
+    width: 52%;
+}
+
+.width_53_per {
+    width: 53%;
+}
+
+.width_54_per {
+    width: 54%;
+}
+
+.width_55_per {
+    width: 55%;
+}
+
+.width_56_per {
+    width: 56%;
+}
+
+.width_57_per {
+    width: 57%;
+}
+
+.width_58_per {
+    width: 58%;
+}
+
+.width_59_per {
+    width: 59%;
+}
+
+.width_60_per {
+    width: 60%;
+}
+
+.width_61_per {
+    width: 61%;
+}
+
+.width_62_per {
+    width: 62%;
+}
+
+.width_63_per {
+    width: 63%;
+}
+
+.width_64_per {
+    width: 64%;
+}
+
+.width_65_per {
+    width: 65%;
+}
+
+.width_66_per {
+    width: 66%;
+}
+
+.width_67_per {
+    width: 67%;
+}
+
+.width_68_per {
+    width: 68%;
+}
+
+.width_69_per {
+    width: 69%;
+}
+
+.width_70_per {
+    width: 70%;
+}
+
+.width_71_per {
+    width: 71%;
+}
+
+.width_72_per {
+    width: 72%;
+}
+
+.width_73_per {
+    width: 73%;
+}
+
+.width_74_per {
+    width: 74%;
+}
+
+.width_75_per {
+    width: 75%;
+}
+
+.width_76_per {
+    width: 76%;
+}
+
+.width_77_per {
+    width: 77%;
+}
+
+.width_78_per {
+    width: 78%;
+}
+
+.width_79_per {
+    width: 79%;
+}
+
+.width_80_per {
+    width: 80%;
+}
+
+.width_81_per {
+    width: 81%;
+}
+
+.width_82_per {
+    width: 82%;
+}
+
+.width_83_per {
+    width: 83%;
+}
+
+.width_84_per {
+    width: 84%;
+}
+
+.width_85_per {
+    width: 85%;
+}
+
+.width_86_per {
+    width: 86%;
+}
+
+.width_87_per {
+    width: 87%;
+}
+
+.width_88_per {
+    width: 88%;
+}
+
+.width_89_per {
+    width: 89%;
+}
+
+.width_90_per {
+    width: 90%;
+}
+
+.width_91_per {
+    width: 91%;
+}
+
+.width_92_per {
+    width: 92%;
+}
+
+.width_93_per {
+    width: 93%;
+}
+
+.width_94_per {
+    width: 94%;
+}
+
+.width_95_per {
+    width: 95%;
+}
+
+.width_96_per {
+    width: 96%;
+}
+
+.width_97_per {
+    width: 97%;
+}
+
+.width_98_per {
+    width: 98%;
+}
+
+.width_99_per {
+    width: 99%;
+}
+
+.width_100_per {
+    width: 100%;
 }
 
 .width_1 {
