@@ -352,7 +352,7 @@
             </div>
 
             <div class="board width_4 height_17 bordered rounded shadowed margined">
-                <div class="board_title width_4 bordered rounded">Языки</div>
+                <div class="board_title width_4 bordered rounded">Локали</div>
                 <div class="board_content height_board_content_no_title_or_btn_17">
                     <ul>
                         <li class="rounded board_content_active_line">
@@ -374,16 +374,16 @@
                                         <input class="board_checkbox" type="checkbox" checked>
                                     </div>
                                     <div class="board_line_param_name width_55_per rounded">Русский</div>
-                                    <div class="board_line_param_value width_30_per rounded">основной</div>
+                                    <div class="board_line_param_value width_30_per rounded">главная</div>
                                     <div class="board_line_param_value width_10_per rounded">RU</div>
                                 </div>
                             </a>
                         </li>
-                        <li class="rounded board_content_no_active_line">
+                        <li class="rounded board_content_active_line">
                             <a href="#select-organization" class="aside_link">
                                 <div class="board_line_container width_100_per">
                                     <div class="board_line_checkbox width_5_per rounded">
-                                        <input class="board_checkbox" type="checkbox">
+                                        <input class="board_checkbox" type="checkbox" checked>
                                     </div>
                                     <div class="board_line_param_name width_55_per rounded">Україна</div>
                                     <div class="board_line_param_value width_30_per rounded"></div>
@@ -391,15 +391,39 @@
                                 </div>
                             </a>
                         </li>
+                        <li class="rounded board_content_active_line">
+                            <a href="#select-organization" class="aside_link">
+                                <div class="board_line_container width_100_per">
+                                    <div class="board_line_checkbox width_5_per rounded">
+                                        <input class="board_checkbox" type="checkbox" checked>
+                                    </div>
+                                    <div class="board_line_param_name width_55_per rounded">中国人</div>
+                                    <div class="board_line_param_value width_30_per rounded"></div>
+                                    <div class="board_line_param_value width_10_per rounded">CZ</div>
+                                </div>
+                            </a>
+                        </li>
                         <li class="rounded board_content_no_active_line">
                             <a href="#select-organization" class="aside_link">
                                 <div class="board_line_container width_100_per">
                                     <div class="board_line_checkbox width_5_per rounded">
                                         <input class="board_checkbox" type="checkbox">
                                     </div>
-                                    <div class="board_line_param_name width_55_per rounded">中国人</div>
+                                    <div class="board_line_param_name width_55_per rounded">Deutsche</div>
                                     <div class="board_line_param_value width_30_per rounded"></div>
-                                    <div class="board_line_param_value width_10_per rounded">CZ</div>
+                                    <div class="board_line_param_value width_10_per rounded">DE</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="rounded board_content_no_active_line">
+                            <a href="#select-organization" class="aside_link">
+                                <div class="board_line_container width_100_per">
+                                    <div class="board_line_checkbox width_5_per rounded">
+                                        <input class="board_checkbox" type="checkbox">
+                                    </div>
+                                    <div class="board_line_param_name width_55_per rounded">Français</div>
+                                    <div class="board_line_param_value width_30_per rounded"></div>
+                                    <div class="board_line_param_value width_10_per rounded">FR</div>
                                 </div>
                             </a>
                         </li>
@@ -424,6 +448,15 @@
                         <div class="board_landing_input_box width_100_per height_3">
                             <label>Описание</label>
                             <input class="board_landing_input width_100_per bordered rounded shadowed" type="text" placeholder="Введите описание...">
+                        </div>
+                        <div class="board_landing_input_box width_100_per height_3">
+                            <label>Главная локаль</label>
+                            <select class="board_landing_input width_100_per bordered rounded shadowed">
+                                <option value="EN">EN English</option>
+                                <option value="RU" selected>RU Русский</option>
+                                <option value="UA">UA Україна</option>
+                                <option value="CZ">CZ 中国人</option>
+                              </select>
                         </div>
                     </div>
                 </div>
