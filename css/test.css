@@ -369,6 +369,16 @@ aside ul {
     outline: 1px solid var(--main_light_lighter_color);
 }
 
+.board_landing_select {
+    padding: 1.5px 2.5px;
+}
+
+.board_landing_select:focus {
+    padding: 1.5px 2.5px;
+    background-color: var(--main_light_lighter_color);
+    outline: 1px solid var(--main_light_lighter_color);
+}
+
 footer {
     text-align: center;
     color: var(--main_dark_color);
